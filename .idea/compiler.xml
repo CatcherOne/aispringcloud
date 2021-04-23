@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
         <module name="hystrix" />
+        <module name="configclient" />
         <module name="ribbon" />
         <module name="eurekaclient" />
         <module name="nativeconfigserve" />
@@ -23,6 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configclient" options="-parameters" />
       <module name="configserver" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eurekaclient" options="-parameters" />

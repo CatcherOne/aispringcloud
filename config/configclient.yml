@@ -7,3 +7,5 @@ eureka:
 spring:
   application:
     name: configclient
+
+#客户端的配置文件

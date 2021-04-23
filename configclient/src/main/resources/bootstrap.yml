@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      name: configclient
+      label: master
+      discovery:
+        enabled: true   #从configserver里面去找，本地关联的方法使用的是通过ip+端口
+        service-id: configserver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
