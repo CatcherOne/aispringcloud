@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev   #config里面找配置，由name+active拼接目标配置文件名 configclient-dev
+  cloud:
+    config:
+      uri: http://localhost:8762 #本地configServer的访问路径
+      fail-fast: true #设置客户端优先判断ConfigServer获取是否正常
+    #application是默认的配置文件，此时是要调用的，前端框架名字，且是固定的
